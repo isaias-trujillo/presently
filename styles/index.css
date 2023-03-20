@@ -1,0 +1,46 @@
+/*noinspection CssUnknownTarget*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary-container: #C9EBF2;
+
+    --secondary-container: #F1F1FE;
+    --secondary-on-container: #0E0C7D;
+
+    --neutral-98: #FAFAFA;
+    --neutral-95: #F1F2F3;
+    --neutral-83: #D1D5D8;
+    --neutral-65: #A0A7AB;
+    --neutral-35: #595959;
+    --neutral-15: #262626;
+    --neutral-background: #1A1C18;
+    --neutral-on-background: #E0E4D7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', Inter, sans-serif;
+}
+
+#app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100svh;
+}
+
+input {
+    border: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+li {
+    list-style-type: none;
+}

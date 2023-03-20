@@ -1,0 +1,31 @@
+#records {
+    font-family: 'Outfit', Inter, sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+}
+
+#records thead {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    gap: 20px;
+    background-color: var(--secondary-container);
+    color: var(--secondary-on-container);
+    border-radius: 16px;
+}
+
+tr {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-around;
+}
+
+th, td {
+    font-weight: normal;
+}
