@@ -5,9 +5,9 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../styles/index.css">
-    <link rel="stylesheet" href="../styles/layouts/login.css">
-    <link rel="stylesheet" href="../styles/buttons/large.css">
+    <link rel="stylesheet" href="/presently/styles/index.css">
+    <link rel="stylesheet" href="/presently/styles/layouts/login.css">
+    <link rel="stylesheet" href="/presently/styles/buttons/large.css">
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/992/992531.png">
     <title>Presently: Login</title>
 </head>
@@ -33,6 +33,6 @@
     </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-<script src="./../scripts/login/onLogin.js"></script>
+<script src="/presently/scripts/login/onLogin.js"></script>
 </body>
 </html>
