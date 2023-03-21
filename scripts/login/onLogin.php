@@ -1,27 +1,15 @@
 <?php
-$email = $_POST["email"];
+
+include_once $_SERVER['DOCUMENT_ROOT'].'/presently/core/auth/infrastructure/services/LoginUserService.php';
+
+use core\auth\infrastructure\services\LoginUserService;
+
+
+$emailOrCode = $_POST["email"];
 $password = $_POST['password'];
 
-if (!isset($email) || empty(trim($email))) {
-    echo json_encode([
-        'response' => null,
-        'hasError' => true,
-        'error' => 'Correo requerido'
-    ]);
-    return;
-}
+$service = new LoginUserService();
 
-if (!isset($password) || empty(trim($password))) {
-    echo json_encode([
-        'response' => null,
-        'hasError' => true,
-        'error' => 'Contraseña requerida'
-    ]);
-    return;
-}
+$response = $service->login($emailOrCode, $password);
 
-echo json_encode([
-    'response' => 'all right',
-    'hasError' => false,
-    'error' => ''
-]);
+echo json_encode($response);
