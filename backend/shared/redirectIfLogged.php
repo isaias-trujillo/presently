@@ -3,7 +3,9 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/presently/core/auth/infrastructure/se
 
 use core\auth\infrastructure\services\LoginUserService;
 
-session_start();
+if (session_status() === PHP_SESSION_NONE){
+    session_start();
+}
 
 if (empty($_SESSION)) {
     echo json_encode('');
@@ -21,7 +23,9 @@ $loginUri = '/presently/pages/login.php';
 if (isset($response['error']) || !$response['verified']) {
     $uri = $loginUri;
 } else {
-    $uri = '/presently/pages/admin/students.php';
+    if ($service->isAdmin($rol)) {
+        $uri = '/presently/pages/admin/students.php';
+    }
 }
 
 $redirectStatus = json_encode($uri);

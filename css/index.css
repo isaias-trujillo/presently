@@ -45,3 +45,11 @@ button:focus {
 li {
     list-style-type: none;
 }
+
+a {
+    all: unset;
+}
+
+a:hover {
+    cursor: pointer;
+}

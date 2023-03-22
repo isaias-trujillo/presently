@@ -23,21 +23,10 @@
 <body>
 <div id="app">
     <div id="platform">
-        <nav id="navbar">
-            <header>
-                <span>Robert Thomas</span>
-                <br>
-                <span>Admin</span>
-            </header>
-            <ul>
-                <li class="active">
-                    Students
-                </li>
-            </ul>
-            <button class='large-button--dark' id='action' type='button' onclick="onLogout()">
-                Logout
-            </button>
-        </nav>
+        <?php
+        include_once $_SERVER['DOCUMENT_ROOT'] . '/presently/components/navigation/admin.php';
+            echo navBar('Estudiantes');
+        ?>
         <section id="content">
             <div id="options">
                 <h1>Students</h1>
@@ -81,7 +70,8 @@
         </section>
     </div>
 </div>
-<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 <script src="/presently/backend/shared/onLogout.js"></script>
 <script src="/presently/backend/shared/redirectIfLogged.js"></script>
 </body>
