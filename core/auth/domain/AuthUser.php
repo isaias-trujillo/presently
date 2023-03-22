@@ -3,8 +3,15 @@
 namespace core\auth\domain;
 final class AuthUser
 {
-    public function __construct(private string $email, private string $password, private int $rol)
+    private int $rol;
+    private string $password;
+    private string $email;
+
+    public function __construct(string $email, string $password, int $rol)
     {
+        $this->email = $email;
+        $this->password = $password;
+        $this->rol = $rol;
     }
 
     public function passwordMatches(string $password): bool

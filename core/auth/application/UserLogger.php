@@ -10,8 +10,11 @@ use core\shared\domain\Enigma;
 
 final class UserLogger
 {
-    public function __construct(private UserRepository $repository)
+    private UserRepository $repository;
+
+    public function __construct(UserRepository $repository)
     {
+        $this->repository = $repository;
 
     }
 

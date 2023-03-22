@@ -5,12 +5,12 @@ $(document).ready(function () {
         data: {},
         success: function (response) {
             const {lastname, firstname} = JSON.parse(response)
-            buildNavBar(lastname, firstname)
+            setBasicInfo(lastname, firstname)
         }
     })
 })
 
-const buildNavBar = (lastname, firstname) => {
+const setBasicInfo = (lastname, firstname) => {
     const template = `<span>${lastname}</span><br><span>${firstname}</span>`
     $('#navbar > header').html(template)
 }

@@ -6,14 +6,25 @@ use mysqli;
 
 abstract class MySql
 {
+    private string $port = '3306';
+    private string $database = 'presently';
+    private string $password = '';
+    private string $username = 'root';
+    private string $hostname = 'localhost';
+
     public function __construct(
-        private string $hostname = 'localhost',
-        private string $username = 'root',
-        private string $password = '',
-        private string $database = 'presently',
-        private string $port = '3306'
+        string $hostname = 'localhost',
+        string $username = 'root',
+        string $password = '',
+        string $database = 'presently',
+        string $port = '3306'
     )
     {
+        $this->hostname = $hostname;
+        $this->username = $username;
+        $this->password = $password;
+        $this->database = $database;
+        $this->port = $port;
     }
 
     protected function connect(): ?mysqli
