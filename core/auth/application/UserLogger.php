@@ -2,8 +2,8 @@
 
 namespace core\auth\application;
 
-include_once $_SERVER['DOCUMENT_ROOT'].'/presently/core/auth/domain/UserRepository.php';
-include_once $_SERVER['DOCUMENT_ROOT'].'/presently/core/shared/domain/Enigma.php';
+include_once $_SERVER['DOCUMENT_ROOT'] . '/presently/core/auth/domain/UserRepository.php';
+include_once $_SERVER['DOCUMENT_ROOT'] . '/presently/core/shared/domain/Enigma.php';
 
 use core\auth\domain\UserRepository;
 use core\shared\domain\Enigma;
@@ -37,5 +37,19 @@ final class UserLogger
                 'rol' => Enigma::encrypt($user->rol())
             ]
         ];
+    }
+
+    function verify(string $encryptedEmail, string $encryptedRol): array
+    {
+        $email = Enigma::decrypt($encryptedEmail);
+        $rol = Enigma::decrypt($encryptedRol);
+        return [
+            'verified' => $this->repository->verify($email, $rol),
+        ];
+    }
+
+    function isAdmin(string $encryptedRol): bool
+    {
+        return Enigma::verify('1', $encryptedRol);
     }
 }

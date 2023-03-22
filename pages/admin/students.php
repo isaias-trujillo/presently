@@ -5,16 +5,16 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="/css/index.css">
-    <link rel="stylesheet" type="text/css" href="/css/layouts/platform.css">
-    <link rel="stylesheet" type="text/css" href="/css/table/layout.css">
-    <link rel="stylesheet" type="text/css" href="/css/table/options.css">
-    <link rel="stylesheet" type="text/css" href="/css/table/search.css">
-    <link rel="stylesheet" type="text/css" href="/css/navigation.css">
-    <link rel="stylesheet" type="text/css" href="/css/buttons/large.css">
-    <link rel="stylesheet" type="text/css" href="/css/buttons/medium.css">
-    <link rel="stylesheet" type="text/css" href="/css/buttons/small.css">
-    <link rel="stylesheet" type="text/css" href="/css/pages/layout.css">
+    <link rel="stylesheet" type="text/css" href="/presently/css/index.css">
+    <link rel="stylesheet" type="text/css" href="/presently/css/layouts/platform.css">
+    <link rel="stylesheet" type="text/css" href="/presently/css/table/layout.css">
+    <link rel="stylesheet" type="text/css" href="/presently/css/table/options.css">
+    <link rel="stylesheet" type="text/css" href="/presently/css/table/search.css">
+    <link rel="stylesheet" type="text/css" href="/presently/css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="/presently/css/buttons/large.css">
+    <link rel="stylesheet" type="text/css" href="/presently/css/buttons/medium.css">
+    <link rel="stylesheet" type="text/css" href="/presently/css/buttons/small.css">
+    <link rel="stylesheet" type="text/css" href="/presently/css/pages/layout.css">
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/992/992531.png">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,200,0,0"/>
@@ -34,7 +34,7 @@
                     Students
                 </li>
             </ul>
-            <button class='large-button--dark' id='action' type='button'>
+            <button class='large-button--dark' id='action' type='button' onclick="onLogout()">
                 Logout
             </button>
         </nav>
@@ -81,5 +81,8 @@
         </section>
     </div>
 </div>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+<script src="/presently/backend/shared/onLogout.js"></script>
+<script src="/presently/backend/shared/redirectIfLogged.js"></script>
 </body>
 </html>
