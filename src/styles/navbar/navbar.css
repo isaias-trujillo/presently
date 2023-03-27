@@ -1,0 +1,36 @@
+#navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+
+    width: fit-content;
+    height: fit-content;
+
+    background: var(--gray-98);
+
+    box-shadow: 8px 8px 32px var(--gray-83);
+    border-radius: 0 32px 32px 0;
+}
+
+#navbar header {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+}
+
+#navbar > ul {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 20px;
+    padding: 40px 0;
+}

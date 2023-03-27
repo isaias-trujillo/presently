@@ -1,0 +1,38 @@
+.icon-button, .icon-button:disabled {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    background: var(--neutral-background);
+    color: var(--neutral-on-background);
+    border-radius: 8px;
+}
+
+.icon-button:hover {
+    background-color: var(--gray-20);
+    color: white;
+    cursor: pointer;
+}
+
+.icon-button:active {
+    background-color: var(--gray-45);
+}
+
+.icon-button:disabled{
+    background: white;
+    color: var(--neutral-on-background);
+    border: 1px solid var(--gray-83);
+    border-radius: 8px;
+}
+
+.icon-button:disabled:hover{
+    background: white;
+    color: var(--neutral-on-background);
+}
+
+.icon-button:disabled:active{
+    background: var(--gray-98);
+    color: var(--neutral-on-background);
+}

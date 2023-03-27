@@ -1,0 +1,26 @@
+.button-large-dark {
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+
+    padding: 20px 40px;
+    gap: 20px;
+
+    width: fit-content;
+
+    background-color: var(--neutral-background);
+    color: var(--neutral-on-background);
+    border-radius: 12px;
+
+    transition: all 0.75s;
+}
+
+.button-large-dark:hover {
+    background-color: var(--gray-20);
+    color: white;
+    cursor: pointer;
+}
+
+.button-large-dark:active {
+    background-color: var(--gray-45);
+}

@@ -1,0 +1,23 @@
+.navbar-menu, .navbar-active-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 10px;
+
+    width: auto;
+    height: fit-content;
+    border-radius: 24px;
+
+    color: black;
+
+    transition: background-color 0.75s;
+}
+
+.navbar-menu:hover {
+    background-color: var(--gray-95);
+}
+
+.navbar-active-menu {
+    background-color: var(--primary-container);
+}

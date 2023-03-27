@@ -1,3 +1,3 @@
-export async function onLogout() {
-    localStorage.clear();
+export function onLogout() {
+    localStorage.removeItem('user');
 }

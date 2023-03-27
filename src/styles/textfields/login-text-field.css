@@ -1,0 +1,36 @@
+.login-text-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+    gap: 20px;
+
+    width: auto;
+
+    color: black;
+}
+
+.login-text-field > input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+
+    width: clamp(160px, 420px, max(540px, 100%));
+
+    text-align: start;
+
+    height: fit-content;
+
+    color: black;
+    background: var(--gray-97);
+    border-radius: 12px;
+    transition: color, background-color 0.75s;
+}
+
+.login-text-field > input:focus {
+    background: var(--secondary-container);
+    color: var(--secondary-on-container);
+}

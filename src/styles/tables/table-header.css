@@ -1,0 +1,10 @@
+.table-header {
+    background-color: var(--secondary-container);
+    border-radius: 16px;
+}
+
+.table-header tr th {
+    font-weight: normal;
+    color: var(--secondary-on-container);
+    padding: 10px 0;
+}

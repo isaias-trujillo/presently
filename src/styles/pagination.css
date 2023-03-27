@@ -1,0 +1,15 @@
+.pagination {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0;
+    gap: 20px;
+}
+
+.pagination div {
+    display: flex;
+    width: max-content;
+    padding: 12px 0;
+}

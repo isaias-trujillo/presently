@@ -1,0 +1,27 @@
+.table-options {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+
+    width: calc(100% - 80px);
+    height: fit-content;
+
+    background: white;
+    box-shadow: 8px 8px 32px #F1F2F3;
+    border-radius: 12px;
+}
+
+.table-options .title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+
+    color: black;
+}

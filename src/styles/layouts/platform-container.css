@@ -1,0 +1,21 @@
+#platform-container {
+    display: flex;
+    flex-direction: row;
+    width: 100svw;
+    height: 100svh;
+}
+
+#main-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 40px;
+    gap: 40px;
+}
+
+#main-content .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}

@@ -1,4 +1,4 @@
-import {AuthUser} from "../../fetching/auth/fetchLoginApi";
+import {AuthUser} from "../../fetching/auth/authUser";
 
 export default function isAuthorized(user: AuthUser | null, rol: number) {
     if (!user) {
